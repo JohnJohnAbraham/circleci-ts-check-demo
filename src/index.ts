@@ -2,4 +2,6 @@ function greet(name: string): string {
   return `Hello, ${name}!`;
 }
 
-console.log(greet("CircleCI"));
+let userName: number = "CircleCI"; // ❌ Type error: string assigned to number
+
+console.log(greet(userName));
